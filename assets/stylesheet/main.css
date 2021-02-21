@@ -19,9 +19,16 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   min-height: 100vh;
   max-width: 1440px;
   margin: 0 auto;
+}
+
+.page_container > * {
+  width: 85%;
 }
 
 /** Primary colors */
@@ -31,9 +38,7 @@ body {
 /** Secondary colors */
 /** Typography */
 .header {
-  margin: 0 auto;
   height: 120px;
-  width: 85%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -125,10 +130,88 @@ body {
   color: #0095b7;
 }
 
+/** Typography */
+/** Primary colors */
+/** Secondary colors */
 .main {
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
           flex-grow: 1;
+}
+
+.main .home {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding-top: 180px;
+  padding-left: 12%;
+  gap: 24px;
+}
+
+.main .home .home__welcome {
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 700;
+  font-size: 56px;
+  font-style: normal;
+  line-height: 84px;
+  color: #fefefe;
+}
+
+.main .home .home__welcome .home__welcome--name {
+  color: #0095b7;
+}
+
+.main .home .home__career {
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 100;
+  font-size: 32px;
+  font-style: normal;
+  line-height: 32px;
+  color: #fefefe;
+}
+
+.main .home > .home__social_network {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 12px;
+}
+
+.main .home > .home__social_network .home__link {
+  background-color: #fefefe;
+  color: #14191c;
+  display: -ms-grid;
+  display: grid;
+  width: 26px;
+  height: 26px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 50%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 18px;
+  border: 1px solid #fefefe;
+  -webkit-transition: -webkit-transform 150ms ease-in 20ms;
+  transition: -webkit-transform 150ms ease-in 20ms;
+  transition: transform 150ms ease-in 20ms;
+  transition: transform 150ms ease-in 20ms, -webkit-transform 150ms ease-in 20ms;
+}
+
+.main .home > .home__social_network .home__link:hover {
+  -webkit-transform: scale(1.25) rotateZ(360deg);
+          transform: scale(1.25) rotateZ(360deg);
+  background-color: #14191c;
+  color: #fefefe;
+  -webkit-transition: all 280ms ease-in-out 120ms;
+  transition: all 280ms ease-in-out 120ms;
+  -webkit-transition-property: background, color;
+  transition-property: background, color;
 }
 
 /** Typography */

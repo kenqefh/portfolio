@@ -1,3 +1,53 @@
+@import "./../typography";
+@import "./../color";
+
 .main {
   flex-grow: 1;
+
+  .home {
+    display: flex;
+    flex-direction: column;
+    padding-top: 180px;
+    padding-left: 12%;
+    gap: 24px;
+
+    & .home__welcome {
+      @include title_h1();
+      color: $white;
+      & .home__welcome--name {
+        color: $primary_color;
+      }
+    }
+    & .home__career {
+      @include title_h3--thin();
+      color: $white;
+    }
+    & > .home__social_network {
+      display: flex;
+      gap: 12px;
+
+      & .home__link {
+        background-color: $white;
+        color: $black;
+        display: grid;
+        width: 26px;
+        height: 26px;
+        justify-content: center;
+        border-radius: 50%;
+        align-items: center;
+        font-size: 18px;
+        border: 1px solid $white;
+
+        transition: transform 150ms ease-in 20ms;
+      }
+      & .home__link:hover {
+        transform: scale(1.25) rotateZ(360deg);
+        background-color: $black;
+        color: $white;
+
+        transition: all 280ms ease-in-out 120ms;
+        transition-property: background, color;
+      }
+    }
+  }
 }

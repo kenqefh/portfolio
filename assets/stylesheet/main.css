@@ -139,6 +139,7 @@ body {
           flex-grow: 1;
   display: -ms-grid;
   display: grid;
+  min-height: calc(100vh - 240px);
 }
 
 .main .home {

@@ -4,6 +4,7 @@
 .main {
   flex-grow: 1;
   display: grid;
+  min-height: calc(100vh - 240px);
 
   .home {
     padding: 24px 0px 24px 12%;

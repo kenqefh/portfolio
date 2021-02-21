@@ -3,12 +3,13 @@
 
 .main {
   flex-grow: 1;
+  display: grid;
 
   .home {
+    padding: 24px 0px 24px 12%;
     display: flex;
+    justify-content: center;
     flex-direction: column;
-    padding-top: 180px;
-    padding-left: 12%;
     gap: 24px;
 
     & .home__welcome {

@@ -1,0 +1,72 @@
+@import "./../color.scss";
+@import "./../typography.scss";
+
+@mixin navbar_underline {
+  content: "";
+  position: absolute;
+  bottom: -2px;
+  left: 0px;
+  height: 2px;
+  width: 100%;
+  border-radius: 1px;
+
+  background: $primary_color;
+}
+
+@mixin home_gradient($color1, $color2) {
+  background: -webkit-linear-gradient(to right, $color1, $color2);
+  background: linear-gradient(to right, $color1, $color2);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.header {
+  margin: 0 auto;
+  height: 120px;
+  width: 85%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  &__home {
+    text-decoration: none;
+    font-size: 48px;
+    font-style: italic;
+    font-family: $font_primary;
+
+    @include home_gradient($dark_green, $primary_color);
+  }
+  &__home:hover {
+    @include home_gradient($primary_color, $dark_green);
+  }
+
+  &__nav {
+    display: flex;
+    gap: 12px;
+  }
+
+  &__link {
+    text-decoration: none;
+    padding: 2px;
+    color: $white;
+    @include title_h4;
+    position: relative;
+  }
+  &__link::after {
+    transition: all 250ms ease;
+    @include navbar_underline();
+    width: 0px;
+  }
+  &__link:hover::after,
+  &__link--active::after {
+    transition: all 250ms ease;
+    @include navbar_underline();
+  }
+  &__link--active:hover::after {
+    @include navbar_underline();
+    width: 2px;
+  }
+  &__link--active {
+    color: $primary_color;
+  }
+}

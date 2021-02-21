@@ -1,7 +1,4 @@
 @import "global.scss";
 @import "color.scss";
 @import "typography.scss";
-
-body {
-  background-color: $blackg_black;
-}
+@import "./components/header.scss";

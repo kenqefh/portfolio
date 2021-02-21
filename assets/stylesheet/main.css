@@ -1,3 +1,5 @@
+/** Primary colors */
+/** Secondary colors */
 * {
   margin: 0;
   padding: 0;
@@ -5,10 +7,121 @@
           box-sizing: border-box;
 }
 
+body {
+  background-color: #14191c;
+}
+
+.page_container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  min-height: 100vh;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
 /** Primary colors */
 /** Secondary colors */
 /** Typography */
-body {
-  background-color: #14191c;
+/** Primary colors */
+/** Secondary colors */
+/** Typography */
+.header {
+  margin: 0 auto;
+  height: 120px;
+  width: 85%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header__home {
+  text-decoration: none;
+  font-size: 48px;
+  font-style: italic;
+  font-family: "Josefin Sans", sans-serif;
+  background: -webkit-gradient(linear, left top, right top, from(#2f4f69), to(#0095b7));
+  background: linear-gradient(to right, #2f4f69, #0095b7);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.header__home:hover {
+  background: -webkit-gradient(linear, left top, right top, from(#0095b7), to(#2f4f69));
+  background: linear-gradient(to right, #0095b7, #2f4f69);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.header__nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 12px;
+}
+
+.header__link {
+  text-decoration: none;
+  padding: 2px;
+  color: #fefefe;
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  font-style: normal;
+  line-height: 20px;
+  position: relative;
+}
+
+.header__link::after {
+  -webkit-transition: all 250ms ease;
+  transition: all 250ms ease;
+  content: "";
+  position: absolute;
+  bottom: -2px;
+  left: 0px;
+  height: 2px;
+  width: 100%;
+  border-radius: 1px;
+  background: #0095b7;
+  width: 0px;
+}
+
+.header__link:hover::after, .header__link--active::after {
+  -webkit-transition: all 250ms ease;
+  transition: all 250ms ease;
+  content: "";
+  position: absolute;
+  bottom: -2px;
+  left: 0px;
+  height: 2px;
+  width: 100%;
+  border-radius: 1px;
+  background: #0095b7;
+}
+
+.header__link--active:hover::after {
+  content: "";
+  position: absolute;
+  bottom: -2px;
+  left: 0px;
+  height: 2px;
+  width: 100%;
+  border-radius: 1px;
+  background: #0095b7;
+  width: 2px;
+}
+
+.header__link--active {
+  color: #0095b7;
 }
 /*# sourceMappingURL=main.css.map */

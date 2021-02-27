@@ -249,4 +249,92 @@ body {
   line-height: 16px;
   color: #c4c4c4;
 }
+
+/** Typography */
+/** Primary colors */
+/** Secondary colors */
+.works_container .work__title {
+  text-align: center;
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 700;
+  font-size: 56px;
+  font-style: normal;
+  line-height: 84px;
+  color: #fefefe;
+  padding-bottom: 48px;
+}
+
+.works_container .work__list {
+  list-style: none;
+  display: -ms-grid;
+  display: grid;
+  gap: 32px 20px;
+  -ms-grid-columns: (minmax(320px, 1fr))[auto-fill];
+      grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+}
+
+.works_container .work__list .work__card {
+  height: 240px;
+  border-radius: 8px;
+  padding: 8px 12px;
+  display: inline-block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #fefefe;
+  overflow: hidden;
+  position: relative;
+}
+
+.works_container .work__list .work__card .work__card_name {
+  text-decoration: none;
+  color: #14191c;
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 600;
+  font-size: 32px;
+  font-style: normal;
+  line-height: 32px;
+}
+
+.works_container .work__list .work__card .work__card_repository {
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  text-decoration: none;
+  color: #0095b7;
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 300;
+  font-size: 14px;
+  font-style: normal;
+  line-height: 20px;
+}
+
+.works_container .work__list .work__card .work__card_name:hover,
+.works_container .work__list .work__card .work__card_repository:hover {
+  text-decoration: underline;
+}
+
+.works_container .work__list .work__card::after {
+  content: "</>";
+  font-size: 56px;
+  text-align: center;
+  line-height: 120px;
+  font-weight: 700;
+  background-color: #ff7f00;
+  color: #fefefe;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 120px;
+}
 /*# sourceMappingURL=main.css.map */

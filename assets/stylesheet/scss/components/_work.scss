@@ -14,9 +14,11 @@
     display: grid;
     gap: 32px 20px;
     grid-template-columns: repeat(auto-fill, minmax(360px, 1fr));
+    justify-items: center;
 
     .work__card {
       height: 240px;
+      max-width: 400px;
       border-radius: 8px;
       background-color: $white;
       position: relative;

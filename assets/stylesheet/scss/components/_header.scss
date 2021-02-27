@@ -68,3 +68,11 @@
     color: $primary_color;
   }
 }
+
+@media screen and (max-width: 720px) {
+  .header {
+    gap: 16px;
+    justify-content: center;
+    flex-direction: column;
+  }
+}

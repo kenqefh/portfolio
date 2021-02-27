@@ -130,6 +130,19 @@ body {
   color: #0095b7;
 }
 
+@media screen and (max-width: 720px) {
+  .header {
+    gap: 16px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
 /** Typography */
 /** Primary colors */
 /** Secondary colors */
@@ -271,10 +284,12 @@ body {
   gap: 32px 20px;
   -ms-grid-columns: (minmax(360px, 1fr))[auto-fill];
       grid-template-columns: repeat(auto-fill, minmax(360px, 1fr));
+  justify-items: center;
 }
 
 .works_container .work__list .work__card {
   height: 240px;
+  max-width: 400px;
   border-radius: 8px;
   background-color: #fefefe;
   position: relative;

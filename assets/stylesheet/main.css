@@ -78,7 +78,7 @@ body {
 .header__link {
   text-decoration: none;
   padding: 2px;
-  color: #fefefe;
+  color: #ffffff;
   font-family: "Josefin Sans", sans-serif;
   font-weight: 400;
   font-size: 20px;
@@ -176,7 +176,7 @@ body {
   font-size: 56px;
   font-style: normal;
   line-height: 84px;
-  color: #fefefe;
+  color: #ffffff;
 }
 
 .main .home .home__welcome .home__welcome--name {
@@ -189,7 +189,7 @@ body {
   font-size: 32px;
   font-style: normal;
   line-height: 32px;
-  color: #fefefe;
+  color: #ffffff;
 }
 
 .main .home > .home__social_network {
@@ -200,7 +200,7 @@ body {
 }
 
 .main .home > .home__social_network .home__link {
-  background-color: #fefefe;
+  background-color: #ffffff;
   color: #14191c;
   display: -ms-grid;
   display: grid;
@@ -214,7 +214,7 @@ body {
       -ms-flex-align: center;
           align-items: center;
   font-size: 18px;
-  border: 1px solid #fefefe;
+  border: 1px solid #ffffff;
   -webkit-transition: -webkit-transform 150ms ease-in 20ms;
   transition: -webkit-transform 150ms ease-in 20ms;
   transition: transform 150ms ease-in 20ms;
@@ -225,7 +225,7 @@ body {
   -webkit-transform: scale(1.25) rotateZ(360deg);
           transform: scale(1.25) rotateZ(360deg);
   background-color: #14191c;
-  color: #fefefe;
+  color: #ffffff;
   -webkit-transition: all 280ms ease-in-out 120ms;
   transition: all 280ms ease-in-out 120ms;
   -webkit-transition-property: background, color;
@@ -273,7 +273,7 @@ body {
   font-size: 56px;
   font-style: normal;
   line-height: 84px;
-  color: #fefefe;
+  color: #ffffff;
   padding-bottom: 48px;
 }
 
@@ -284,14 +284,13 @@ body {
   gap: 32px 20px;
   -ms-grid-columns: (minmax(360px, 1fr))[auto-fill];
       grid-template-columns: repeat(auto-fill, minmax(360px, 1fr));
-  justify-items: center;
 }
 
 .works_container .work__list .work__card {
   height: 240px;
   max-width: 400px;
   border-radius: 8px;
-  background-color: #fefefe;
+  background-color: #ffffff;
   position: relative;
   overflow: hidden;
 }
@@ -320,7 +319,7 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(44, 58, 71, 0.25);
+  background: rgba(44, 58, 71, 0.45);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -341,7 +340,7 @@ body {
   font-size: 32px;
   font-style: normal;
   line-height: 32px;
-  color: #14191c;
+  color: #ffffff;
 }
 
 .works_container .work__list .work__card .work__card_repository {
@@ -357,7 +356,7 @@ body {
   font-weight: 700;
   padding: 2px 16px;
   text-decoration: none;
-  color: #fefefe;
+  color: #ffffff;
   background-color: #0095b7;
 }
 

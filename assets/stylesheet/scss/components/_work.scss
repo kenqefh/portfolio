@@ -14,7 +14,6 @@
     display: grid;
     gap: 32px 20px;
     grid-template-columns: repeat(auto-fill, minmax(360px, 1fr));
-    justify-items: center;
 
     .work__card {
       height: 240px;
@@ -42,7 +41,7 @@
         left: 0;
         width: 100%;
         height: 100%;
-        background: rgba(44, 58, 71, 0.25);
+        background: rgba(44, 58, 71, 0.45);
 
         display: flex;
         flex-direction: column;
@@ -52,7 +51,7 @@
       .work__card_name {
         text-decoration: none;
         @include title_h3;
-        color: $black;
+        color: $white;
       }
       .work__card_repository {
         align-self: flex-end;

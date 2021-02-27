@@ -1,0 +1,9 @@
+{
+  "editor.fontSize": 13,
+  "debug.console.fontSize": 12,
+  "markdown.preview.fontSize": 12,
+  "screencastMode.fontSize": 48,
+  "window.zoomLevel": -1,
+  "terminal.integrated.fontSize": 12,
+  "liveServer.settings.port": 5501
+}

@@ -1,5 +1,6 @@
 import { DATA } from "../store.js";
 import { About } from "./about.js";
+import { Work } from "./work.js";
 
 export function Main(parentSelector) {
   this.parentSelector = parentSelector;
@@ -20,7 +21,7 @@ Main.prototype.loadContent = function () {
       new About(this.parentSelector).render();
       break;
     case "works":
-      this.parentElement.innerHTML = "";
+      new Work(this.parentSelector).render();
       break;
     case "blog":
       this.parentElement.innerHTML = "";
